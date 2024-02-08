@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="../../scripts/tailwindcfg.js"></script>
@@ -12,84 +12,130 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-</head>
-<body class="bg-fundo-claro h-screen font-montserrat">
-    <header class="bg-white shadow-sm w-full h-20 flex justify-between items-center px-10">
-        <img src="../../assets/Group 3-PhotoRoom.png-PhotoRoom.png" alt="Logo EDUQ" class=" h-36">
-        <div class="flex items-center gap-8">
-            <div class="flex items-center gap-2">
-                <img src="../../assets/user.png" alt="Foto perfil" class="h-8">
-                <h1 class="font-bold">Administrador 01</h1>
-            </div>
-            <a href="#" class="bg-roxo-claro text-white py-3 px-6 rounded-md font-bold cursor-pointer hover:bg-purple-950">LOG OUT</a>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-fundo-claro h-screen font-montserrat">
+    <header
+      class="bg-white shadow-sm w-full h-20 flex justify-between items-center px-10"
+    >
+      <a href="adm.html"
+        ><img
+          src="../../assets/Group 3-PhotoRoom.png-PhotoRoom.png"
+          alt="Logo EDUQ"
+          class="h-36"
+      /></a>
+      <div class="flex items-center gap-8">
+        <div class="flex items-center gap-2">
+          <img src="../../assets/user.png" alt="Foto perfil" class="h-8" />
+          <h1 class="font-bold text-gray-700">Administrador 01</h1>
         </div>
+        <a
+          href="#"
+          class="bg-roxo-claro text-white py-3 px-6 rounded-md font-bold cursor-pointer hover:bg-purple-950"
+          >LOG OUT</a
+        >
+      </div>
     </header>
-    <menu class="gap-2 bg-white shadow-sm w-full h-20 flex items-center px-10 mb-12">
-        <span class="material-symbols-outlined text-3xl text-gray-300">home</span>
-        <h1 class="text-sm font-bold text-gray-300">Menu Principal</h1>
-        <p class="text-gray-300 text-bold">></p>
-        <span class="material-symbols-outlined text-3xl">manage_accounts</span>
-        <h1 class="text-sm font-bold">Gerenciar Usuários</h1>
+    <menu
+      class="gap-2 bg-white shadow-sm w-full h-20 flex items-center px-10 mb-12"
+    >
+      <span class="material-symbols-outlined text-3xl text-gray-300">home</span>
+      <h1 class="text-sm font-bold text-gray-300">Menu Principal</h1>
+      <p class="text-gray-300 text-bold">></p>
+      <span class="material-symbols-outlined text-3xl text-gray-700"
+        >manage_accounts</span
+      >
+      <h1 class="text-sm font-bold text-gray-700">Gerenciar Usuários</h1>
     </menu>
     <main class="flex justify-center h-3/4 2xl:h-4/6 gap-10">
-        <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-            <table class="w-full text-sm text-left rtl:text-right text-gray-500 ">
-                <thead class="text-xs text-gray-700 uppercase bg-gray-50  ">
-                    <tr>
-                        <th scope="col" class="px-6 py-3">
-                            ID
-                        </th>
-                        <th scope="col" class="px-6 py-3">
-                            Nome
-                        </th>
-                        <th scope="col" class="px-6 py-3">
-                            CPF
-                        </th>
-                        <th scope="col" class="px-6 py-3">
-                            Data de Nascimento
-                        </th>
-                        <th scope="col" class="px-6 py-3">
-                            Email
-                        </th>
-                        <th scope="col" class="px-6 py-3">
-                            Tipo-Usuário
-                        </th>
-                        <th scope="col" class="px-6 py-3">
-                            Gerenciar
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="odd:bg-white  even:bg-gray-50  border-b ">
-                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
-                            01
-                        </th>
-                        <td class="px-6 py-4">
-                            Artur Vargas
-                        </td>
-                        <td class="px-6 py-4">
-                            888.888.888-88
-                        </td>
-                        <td class="px-6 py-4">
-                            05/01/2005
-                        </td>
-                        <td class="px-6 py-4">
-                            arturvargaslg@gmail.com
-                        </td>
-                        <td class="px-6 py-4">
-                            Aluno
-                        </td>
-                        <td class="px-6 py-4">
-                            <a href="#" class="font-medium text-indigo-800 hover:underline">Editar</a>
-                        </td>
-                    </tr> 
-                </tbody>
-            </table>
-        </div>
-        <a href="" class="flex gap-2 items-center bg-roxo-claro text-white h-20 px-10 rounded-lg cursor-pointer hover:bg-purple-950 2xl:h-16 2xl:px-6">Registrar Usuários<span class="material-symbols-outlined">
+      <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+        <table class="w-full text-sm text-left rtl:text-right text-gray-500">
+          <thead class="text-xs text-gray-700 uppercase bg-gray-50">
+            <tr>
+              <th scope="col" class="px-6 py-3">ID</th>
+              <th scope="col" class="px-6 py-3">Nome</th>
+              <th scope="col" class="px-6 py-3">CPF</th>
+              <th scope="col" class="px-6 py-3">Data de Nascimento</th>
+              <th scope="col" class="px-6 py-3">Email</th>
+              <th scope="col" class="px-6 py-3">Tipo-Usuário</th>
+              <th scope="col" class="px-6 py-3">Gerenciar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="odd:bg-white even:bg-gray-50 border-b">
+              <th
+                scope="row"
+                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap"
+              >
+                01
+              </th>
+              <td class="px-6 py-4">Artur Vargas</td>
+              <td class="px-6 py-4">888.888.888-88</td>
+              <td class="px-6 py-4">05/01/2005</td>
+              <td class="px-6 py-4">arturvargaslg@gmail.com</td>
+              <td class="px-6 py-4">Aluno</td>
+              <td class="px-6 py-4">
+                <a
+                  href="#"
+                  onclick="toggleModal('modal-id')"
+                  class="font-medium text-indigo-800 hover:underline"
+                  >Editar</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="flex flex-col gap-6">
+        <a
+          href="../../index.html"
+          class="flex gap-2 items-center bg-roxo-claro text-white h-20 px-10 rounded-lg cursor-pointer hover:bg-purple-950 2xl:h-16 2xl:px-6"
+          >Registrar Usuários<span class="material-symbols-outlined">
             add_circle
-            </span></a>
+          </span></a
+        >
+        <div
+          class="flex flex-col w-full font-montserrat text-gray-700 shadow-md rounded-md p-4 gap-4 bg-gray-50"
+        >
+          <h1 class="text-md font-montserrat font-bold">Filtrar por:</h1>
+          <div class="flex flex-col gap-2">
+            <input
+              placeholder="NOME"
+              class=" h-8 rounded-sm px-2 text-sm focus:outline-none focus:ring-1 focus:ring-purple-600 bg-fundo-claro"
+              type="text"
+            />
+            <input
+              placeholder="CPF"
+              class=" h-8 rounded-sm px-2 text-sm  focus:outline-none focus:ring-1 focus:ring-purple-600 bg-fundo-claro"
+              type="number"
+            />
+            <select
+              class=" text-gray-400 h-8 rounded-sm px-2 text-sm  focus:outline-none focus:ring-1 focus:ring-purple-600 bg-fundo-claro"
+            >
+              <option
+                disabled
+                selected
+                class="text-gray-700 border-gray-400 focus:outline-none focus:ring-1 focus:ring-purple-600 bg-fundo-claro"
+                value=""
+              >
+                TIPO-USUÁRIO
+              </option>
+              <option class="text-gray-700" value="">Aluno</option>
+              <option class="text-gray-700" value="">Administrador</option>
+              <option class="text-gray-700" value="">Professor</option>
+              <option class="text-gray-700" value="">Todos</option>
+            </select>
+            <input
+              placeholder="EMAIL"
+              class="h-8 rounded-sm px-2 mb-3 text-sm focus:outline-none focus:ring-1 focus:ring-purple-600 bg-fundo-claro"
+              type="email"
+            />
+          </div>
+        </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>

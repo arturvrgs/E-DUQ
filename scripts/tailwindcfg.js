@@ -12,7 +12,8 @@ tailwind.config = {
             },
         },
         fontFamily: {
-            montserrat: ['Montserrat', 'sans-serif']
+            montserrat: ['Montserrat', 'sans-serif'],
+            poppins: ['Poppins', 'sans-serif']
         },
         screens: {
             '2xl': {'max': '1535px'},
