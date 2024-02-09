@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
+    <script src="../../scripts/modalDialog.js"></script>
   </head>
   <body class="bg-fundo-claro h-screen font-montserrat">
     <header
@@ -65,6 +66,7 @@
             </tr>
           </thead>
           <tbody>
+
             <tr class="odd:bg-white even:bg-gray-50 border-b">
               <th
                 scope="row"
@@ -78,17 +80,63 @@
               <td class="px-6 py-4">arturvargaslg@gmail.com</td>
               <td class="px-6 py-4">Aluno</td>
               <td class="px-6 py-4">
-                <a
-                  href="#"
-                  onclick="toggleModal('modal-id')"
-                  class="font-medium text-indigo-800 hover:underline"
-                  >Editar</a
-                >
+                <button type="button" onclick="toggleModal('modal-id')">
+                  <a
+                    href="#"
+                    class="font-medium text-indigo-800 hover:underline"
+                    >Editar</a
+                  >
+                </button>
               </td>
             </tr>
+
+            
           </tbody>
         </table>
       </div>
+
+      <div class="hidden overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="modal-id">
+        <div class="relative w-auto my-6 mx-auto max-w-3xl">
+          <!--content-->
+          <div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+            <!--header-->
+            <div class="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t">
+              <h3 class="text-xl font-semibold">
+                Editar Usuário
+              </h3>
+              <button class="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none" onclick="toggleModal('modal-id')">
+                <span class="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                  ×
+                </span>
+              </button>
+            </div>
+            <!--body-->
+                <div class="flex flex-col p-6 gap-6">
+                  
+                  <input class="bg-fundo-claro focus:outline-none p-2" type="text" placeholder="Novo Nome">
+                  
+                  <input class="bg-fundo-claro focus:outline-none p-2" type="number" placeholder="Novo CPF">
+                  
+                  <input class="bg-fundo-claro focus:outline-none p-2 text-gray-400" type="date" placeholder="Novo Data de Nascimento">
+                  
+                  <input class="bg-fundo-claro focus:outline-none p-2" type="email" placeholder="Novo Email">
+                  
+                  <input class="bg-fundo-claro focus:outline-none p-2" type="text" placeholder="Novo Tipo-Usuário">
+                </div>
+            <!--footer-->
+            <div class="flex items-center justify-end p-6 border-t border-solid border-blueGray-200 rounded-b">
+              <button class="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 hover:underline" type="button" onclick="toggleModal('modal-id')">
+                Fechar
+              </button>
+              <button class="bg-violet-500 text-white active:bg-violet-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 hover:bg-violet-700" type="button" onclick="toggleModal('modal-id')">
+                Salvar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hidden opacity-25 fixed inset-0 z-40 bg-black" id="modal-id-backdrop"></div>
+
       <div class="flex flex-col gap-6">
         <a
           href="../../index.html"

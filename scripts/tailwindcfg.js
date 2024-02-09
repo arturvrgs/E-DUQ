@@ -31,6 +31,8 @@ tailwind.config = {
             'sm': {'max': '639px'},
             // => @media (max-width: 639px) { ... } celular
           }
-      }
+
+        
+      },
     }
 }
